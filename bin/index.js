@@ -7,6 +7,7 @@ const pug = require('pug')
 const rimraf = require('rimraf')
 const pkg = require('../package.json')
 const program = require('commander')
+const bs = require('browser-sync').create()
 
 const tmpPath = path.join(__dirname, '../tmp/')
 
@@ -36,10 +37,6 @@ const reloadMdFile = (eventType, _) => {
     process.exit(1)
   }
 
-  if (eventType === 'change') {
-    console.log('markdown file is changed...')
-  }
-
   const md = fs.readFileSync(mdFilePath, { encoding: 'utf8' })
 
   rimraf.sync(tmpPath)
@@ -54,6 +51,10 @@ const reloadMdFile = (eventType, _) => {
 }
 
 reloadMdFile()
-console.log(`Watching "${mdFilePath}"...`)
+
+bs.init({
+  files: path.join(tmpPath, '/index.html'),
+  server: [tmpPath, path.join(__dirname, '../remark')],
+})
 
 fs.watch(mdFilePath, reloadMdFile)

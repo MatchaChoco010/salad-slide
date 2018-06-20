@@ -7,6 +7,12 @@
   "bugs": {
     "url": "https://github.com/MatchaChoco010/salad-slide/issues"
   },
+  "dependencies": {
+    "browser-sync": "^2.24.4",
+    "commander": "^2.15.1",
+    "pug": "^2.0.3",
+    "rimraf": "^2.6.2"
+  },
   "devDependencies": {
     "eslint": "^4.19.1",
     "eslint-config-prettier": "^2.9.0",
@@ -26,10 +32,5 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "dependencies": {
-    "commander": "^2.15.1",
-    "pug": "^2.0.3",
-    "rimraf": "^2.6.2"
   }
 }
