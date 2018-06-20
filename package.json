@@ -1,19 +1,30 @@
 {
   "name": "salad-slide",
   "version": "0.1.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "bin": {
+    "salad": "bin/index.js"
   },
+  "bugs": {
+    "url": "https://github.com/MatchaChoco010/salad-slide/issues"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-prettier": "^2.6.0",
+    "eslint-plugin-promise": "^3.8.0",
+    "eslint-plugin-standard": "^3.1.0",
+    "prettier": "^1.13.5"
+  },
+  "homepage": "https://github.com/MatchaChoco010/salad-slide#readme",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/MatchaChoco010/salad-slide.git"
   },
-  "author": "",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/MatchaChoco010/salad-slide/issues"
-  },
-  "homepage": "https://github.com/MatchaChoco010/salad-slide#readme"
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
 }
