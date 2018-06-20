@@ -28,6 +28,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "commander": "^2.15.1"
+    "commander": "^2.15.1",
+    "pug": "^2.0.3",
+    "rimraf": "^2.6.2"
   }
 }
